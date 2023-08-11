@@ -1,0 +1,411 @@
+ /*Reseteo del css*/
+ html,
+ body,
+ div,
+ span,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ abbr,
+ address,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ samp,
+ small,
+ strong,
+ sub,
+ sup,
+ var,
+ b,
+ i,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+ }
+
+ body {
+   line-height: 1;
+ }
+
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+   display: block;
+ }
+
+ nav ul {
+   list-style: none;
+ }
+
+ blockquote,
+ q {
+   quotes: none;
+ }
+
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+   content: '';
+   content: none;
+ }
+
+ a {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+ }
+
+ /* change colours to suit your needs */
+
+ ins {
+   background-color: #ff9;
+   color: #000;
+   text-decoration: none;
+ }
+
+ /* change colours to suit your needs */
+
+ mark {
+   background-color: #ff9;
+   color: #000;
+   font-style: italic;
+   font-weight: bold;
+ }
+
+ del {
+   text-decoration: line-through;
+ }
+
+ abbr[title],
+ dfn[title] {
+   border-bottom: 1px dotted;
+   cursor: help;
+ }
+
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+ /* change border colour to suit your needs */
+ hr {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #cccccc;
+   margin: 1em 0;
+   padding: 0;
+ }
+
+ input,
+ select {
+   vertical-align: middle;
+ }
+
+/*---------------------------------------------------------------------------------------*/
+body{
+  background-color: #27292d;
+}
+
+#menuPrincipal{
+  background-color: #101010;
+  background-size: 100%;
+  width: 100%;
+  height: 90px;
+}
+
+#menuBotones{
+display: inline;
+padding-left: 300px;
+padding-right: 300px;
+width: 100%;
+height: 90px;
+}
+
+#botonSobreMi{
+  position: relative;
+  left: 200px; 
+  top: 14px;
+  }
+  
+  #botonProyectos{
+    position: relative;
+    left: 1450px;
+    bottom: 10px;
+    }
+
+
+
+a{
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  initial-letter: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+a:hover{
+  background: var(--clr);
+  color: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--clr);
+}
+
+a::before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #101010;
+
+}
+
+a span{
+position: relative;
+z-index: 1;
+}
+
+a i{
+position: absolute;
+inset: 0;
+display: block;
+}
+
+a i::before{
+content: '';
+top: 0;
+position: absolute;
+left: 80%;
+width: 10px;
+height: 4px;
+background: #101010;
+transform: translateX(-50%) skewX(325deg);
+transition: 0.5s;
+}
+
+a:hover i::before{
+  width: 20px;
+  left: 20%;
+}
+
+a i::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #101010;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+a:hover i::after{
+    width: 20px;
+    left: 80%;
+  }
+
+
+#tituloPrincipal{
+text-align: center;
+color: #cccccc;
+font-size: 70px;
+margin-top: 60px;
+margin-bottom: 30px;
+}
+
+#fotoMia{
+  text-align: center;
+}
+
+#nombre{
+  text-align: center;
+  color: #cccccc;
+  font-size: 40px;
+}
+
+#profesion{
+  text-align: center;
+  color: #cccccc;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.cubo{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  left: 200px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform:rotateX(-30deg) rotateY(0deg) ;
+  }
+  100%
+  {
+    transform:rotateX(-30deg) rotateY(360deg) ;
+  }
+  
+}
+
+.cubo div{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+}
+
+.cubo div span{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background:linear-gradient(#151515,rgb(222, 222, 12));
+transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.encimaCubo{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background:#222 ;
+  transform:rotateX(90deg) translateZ(150px) ;
+}
+
+.encimaCubo::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: rgb(222, 222, 12);
+  transform: translateZ(-380px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px rgba(222, 222, 0, 0.2),
+   0, 0, 200px rgba(222, 222, 0, 0.4),
+   0, 0, 300px rgba(222, 222, 0, 0.6),
+   0, 0, 400px rgba(222, 222, 0, 0.8),
+   0, 0, 500px rgba(222, 222, 0, 1);
+}
+
+.barraLuminosa{
+position: relative;
+left: 470px;
+width: 1000px;
+height: 20px;
+background: #fff;
+-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+
+.barraLuminosa::before{
+content: '';
+position: absolute;
+inset: 0;
+background: linear-gradient(90deg,#fb0094,#0000ff,#00ff00,#ffff00,
+#fb0094,#0000ff,#00ff00,#ffff00,#fb0094);
+animation: animateBarra 20s linear infinite;
+background-size: 500%;
+}
+
+.barraLuminosa::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,#fb0094,#0000ff,#00ff00,#ffff00,
+  #fb0094,#0000ff,#00ff00,#ffff00,#fb0094);
+  animation: animateBarra 20s linear infinite;
+  background-size: 500%;
+  filter: blur(20px);
+}
+
+@keyframes animateBarra {
+0%
+{
+  background-position:0 0;
+}
+
+0%
+{
+  background-position:500% 0;
+}
+
+}
